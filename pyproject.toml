@@ -1,0 +1,19 @@
+[project]
+name = "jb_core_app_zztest"
+authors = [
+    { name = "JB Grocers LLP", email = "sachingoel24@gmail.com"}
+        ]
+        description = "Test app for Frappe Cloud validation cache diagnosis"
+        requires-python = ">=3.10"
+        readme = "README.md"
+        dynamic = ["version"]
+        dependencies = []
+
+        [build-system]
+        requires = ["flit_core >=3.4,<4"]
+        build-backend = "flit_core.buildapi"
+
+        [tool.bench.frappe-dependencies]
+        frappe = ">=16.0.0,<17.0.0"
+        erpnext = ">=16.0.0,<17.0.0"
+        
